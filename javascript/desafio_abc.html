@@ -7,22 +7,27 @@
         
         var a = 10
         var b = 20
-        var c = null
+        var c = 30
+        var d = null  // Variavéis
+        var e = null  // Auxiliares
 
         document.write('A: ' + a + '<br />')
         document.write('B: ' + b + '<br />')
         document.write('C: ' + c + '<br />')
 
         document.write('<hr />')
-        //lógica de inversão dos valores das variáveis A e B
+        //lógica de troca dos valores das variáveis A, B e C
 
-
+        d = a 
+        e = b
+        a = b
+        b = c
+        c = d
         
         //
         document.write('A: ' + a + '<br />')
         document.write('B: ' + b + '<br />')
         document.write('C: ' + c + '<br />')
-
         
     </script>
 </head>
