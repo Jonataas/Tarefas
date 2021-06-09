@@ -6,16 +6,18 @@
     <script>
         
         var nota1 = prompt('Digite a 1º Nota: ')
-        nota1 = parseInt(nota1)
         var nota2 = prompt('Digite a 2º Nota: ')
-        nota2 = parseInt(nota2)
-
-
-        var media = (nota1 + nota2) / 2
+        var media = cacularMediaEscolar(nota1, nota2)
 
         document.write('Sua média é ' + media)
 
+        function cacularMediaEscolar(nota1, nota2) {
+            nota1 = parseInt(nota1)
+            nota2 = parseInt(nota1)
+            media = (nota1 + nota2) / 2
 
+            return media
+        }
         
     </script>
 </head>
