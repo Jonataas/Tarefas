@@ -6,10 +6,14 @@
     <script>
         
         var nota1 = prompt('Digite a 1º Nota: ')
+        nota1 = parseInt(nota1)
         var nota2 = prompt('Digite a 2º Nota: ')
-        var media = nota1 + nota2
+        nota2 = parseInt(nota2)
 
-        document.write('Sua média é' + media)
+
+        var media = (nota1 + nota2) / 2
+
+        document.write('Sua média é ' + media)
 
 
         
